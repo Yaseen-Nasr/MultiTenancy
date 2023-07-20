@@ -1,0 +1,23 @@
+﻿@Host = https://localhost:44357
+
+GET {{Host}}/api/products
+tenant: linkedIn
+###
+
+POST {{Host}}/api/products
+tenant: linkedIn
+Content-Type: application/json
+
+{
+    "name": "linkedIn 1 - twitter",
+  "description": "My linkedIn product - 1",
+  "rate": 5
+}
+   
+
+###
+
+GET {{Host}}/api/products/1
+tenant: linkedIn
+
+###
